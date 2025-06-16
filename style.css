@@ -83,3 +83,17 @@ li{margin-bottom:.6rem;}
   h1{font-size:1.9rem}
   .hero-content p{font-size:1rem}
 }
+footer {
+  color: #1a1a1a;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer a {
+  color: #4F46E5;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #4338CA;
+}

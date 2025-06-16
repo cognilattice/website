@@ -1,5 +1,6 @@
 # Cognilattice
 
-Cognilattice builds brain-inspired multi-agent AI with reflexive, symbolic, and strategic layers. Our modular system mirrors human cognition for safe, adaptive intelligence at every scale.
+Cognilattice is a brain-inspired AI architecture startup building layered cognitive agent systems that mirror human neural evolution. Our agents range from reflexive responders to executive planners—enabling modular, self-reconfigurable intelligence.
 
-📄 [Executive Brief (PDF)](Cognilattice_Executive_Brief.pdf)
+🔗 Live site: [https://cognilattice.com](https://cognilattice.com)  
+📄 [Download Executive Brief](./Cognilattice_Executive_Brief.pdf)

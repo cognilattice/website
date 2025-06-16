@@ -26,3 +26,12 @@ const io=new IntersectionObserver(entries=>{
   });
 },{threshold:0.2});
 document.querySelectorAll('.observe').forEach(el=>io.observe(el));
+// Fade header on scroll (optional)
+window.addEventListener('scroll', () => {
+  const hero = document.querySelector('header#hero');
+  if (window.scrollY > 40) {
+    hero.style.opacity = '0.95';
+  } else {
+    hero.style.opacity = '1';
+  }
+});
