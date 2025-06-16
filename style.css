@@ -1,0 +1,85 @@
+:root{
+  --bg:#0d0d11;
+  --fg:#e8e8f0;
+  --accent1:#8a2be2;
+  --accent2:#00d1ff;
+  --gradient:linear-gradient(120deg,var(--accent1),var(--accent2));
+  --radius:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Open Sans',sans-serif;
+  color:var(--fg);
+  background:var(--bg);
+  line-height:1.6;
+  scroll-behavior:smooth;
+}
+h1,h2,h3{
+  font-family:'Inter',sans-serif;
+  font-weight:600;
+}
+.grad-heading{
+  background:var(--gradient);
+  -webkit-background-clip:text;
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+  background-size:200%;
+  animation:gradientMove 6s ease infinite alternate;
+}
+@keyframes gradientMove{to{background-position:200% center}}
+header#hero{
+  position:relative;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  overflow:hidden;
+}
+#particles-js{position:absolute;top:0;left:0;width:100%;height:100%;}
+.hero-content{position:relative;max-width:760px;padding:0 1rem;z-index:1;}
+.hero-content p{margin:1rem 0 2rem;font-size:1.1rem;}
+.btn{
+  background:var(--gradient);
+  border:none;
+  padding:0.8rem 2.2rem;
+  font-size:1rem;
+  border-radius:var(--radius);
+  cursor:pointer;
+  color:#fff;
+  transition:opacity .3s;
+}
+.btn:hover{opacity:.8}
+section{padding:4rem 1.2rem;max-width:1000px;margin:auto;}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1.5rem;
+  margin-top:2rem;
+}
+.tile{
+  background:#15151e;
+  border-radius:var(--radius);
+  padding:2rem 1.2rem;
+  text-align:center;
+  transition:transform .3s;
+}
+.tile i{font-size:2rem;margin-bottom:1rem;color:var(--accent2)}
+.tile:hover{transform:translateY(-6px);}
+ul,ol{margin-left:1.2rem;margin-top:1rem;}
+li{margin-bottom:.6rem;}
+.social a{
+  color:var(--fg);
+  font-size:1.6rem;
+  margin-right:1rem;
+  transition:color .3s;
+}
+.social a:hover{color:var(--accent2);}
+/* Fade-in intersection */
+.observe{opacity:0;transform:translateY(20px);transition:all .6s ease;}
+.observe.visible{opacity:1;transform:none;}
+/* Responsive tweaks */
+@media(max-width:600px){
+  h1{font-size:1.9rem}
+  .hero-content p{font-size:1rem}
+}
